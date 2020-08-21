@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "RiNv+N7PKnCmoWEfduxRKJGUTwLHkUrYZEqWdezD4WuQeh2J9+HQqv9wJg0fZ6a4k8jCfv7qUjQH1QNY9BEf5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\BeautifulGirlsCrawlData\\BeautifulGirlsCrawlData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nasa1\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
