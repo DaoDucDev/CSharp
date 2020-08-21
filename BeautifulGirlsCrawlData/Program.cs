@@ -7,7 +7,7 @@ namespace BeautifulGirlsCrawlData
     {
         static async System.Threading.Tasks.Task Main(string[] args)
         {
-            List<Post> posts = await Services.GetAllPost();
+            await Services.CreateJsonFileAsync();
         }
     }
 }

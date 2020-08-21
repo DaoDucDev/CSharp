@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,10 +9,56 @@ using Newtonsoft.Json;
 
 public class Services
 {
-    public static void CreateJsonFile()
+    public static async Task CreateJsonFileAsync()
     {
-        
+        List<Post> allPosts = new List<Post>();
+        string jsonData = "";
+        int i;
+        if (File.Exists("post.json"))
+        {
+            
+            using (StreamReader sr = new StreamReader("post.json"))
+            {
+                string line;
+
+                while ((line = sr.ReadLine()) != null)
+                {
+                    jsonData = line;
+                    List<Post> oldPosts = JsonConvert.DeserializeObject<List<Post>>(jsonData);
+                    allPosts.AddRange(oldPosts);
+                }
+            }
+
+            for(i = 141; i <= 150; i++)
+            {
+                allPosts.AddRange(await GetPosts(i));
+            }
+
+            Console.WriteLine(allPosts.Count);
+            jsonData = JsonConvert.SerializeObject(allPosts);
+            using (StreamWriter sw = new StreamWriter("post.json"))
+            {
+                sw.WriteLine(jsonData);
+            }
+        }
+        // else
+        // {
+            // for (i = 1; i <= 5; i++)
+            // {
+            //     allPosts.AddRange(await GetPosts(i));
+            // }
+
+            // jsonData = JsonConvert.SerializeObject(allPosts);
+            // Console.WriteLine(allPosts.Count);
+
+            // using (StreamWriter sw = new StreamWriter("post.json"))
+            // {
+            //     sw.WriteLine(jsonData);
+            // }
+        //}
+
     }
+
     public static async Task<List<Post>> GetAllPost()
     {
         List<Post> allPosts = new List<Post>();
@@ -28,7 +73,7 @@ public class Services
 
     public static async Task<List<Post>> GetPosts(int page)
     {
-        string url = "https://mrcong.com/page/" + page;
+        string url = "https://mrcong.com/category/nguoi-dep/nguoi-dep-trung-quoc/page/" + page;
         string htmlData = null;
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
         request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.61";
@@ -83,5 +128,5 @@ public class Services
 
     }
 
-    
+
 }
