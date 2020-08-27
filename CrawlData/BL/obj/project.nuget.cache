@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/5Lx+rfrKq+Iuk2Y9Bkp/7xQwk+Rzy6gzEr1BEU7aAuI0NevOTro9TdZsLAyQCNjfI+jHQI7Qv/x8jeZB3kMfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nasa1\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
