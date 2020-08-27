@@ -25,29 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "Persistence": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
-        }
-      },
-      "Persistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Persistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Persistence.dll": {}
-        }
       }
     }
   },
@@ -73,7 +50,6 @@
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -195,23 +171,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "DAL/1.0.0": {
-      "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
-    },
-    "Persistence/1.0.0": {
-      "type": "project",
-      "path": "../Persistence/Persistence.csproj",
-      "msbuildProject": "../Persistence/Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "DAL >= 1.0.0",
-      "NETStandard.Library >= 2.0.3",
-      "Persistence >= 1.0.0"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -221,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj",
-      "projectName": "BL",
-      "projectPath": "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj",
+      "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+      "projectName": "Persistence",
+      "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-      "outputPath": "D:\\Learn\\CSharp\\CrawlData\\BL\\obj\\",
+      "outputPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -243,14 +207,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "D:\\Learn\\CSharp\\CrawlData\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\DAL\\DAL.csproj"
-            },
-            "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

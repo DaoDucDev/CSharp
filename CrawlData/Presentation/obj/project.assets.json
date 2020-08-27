@@ -1,36 +1,106 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistence.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Persistence/Persistence.csproj",
+      "msbuildProject": "../Persistence/Persistence.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "BL >= 1.0.0",
+      "Persistence >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\nasa1\\.nuget\\packages\\": {}
+    "C:\\Users\\nasa1\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
+      "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\obj\\",
+      "outputPath": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj": {
+              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj"
+            },
+            "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -56,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
