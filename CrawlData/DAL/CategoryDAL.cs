@@ -13,14 +13,14 @@ public class CategoryDAL
         connection = DbHelper.OpenConnection();
     }
 
-    public List<Category> GetAllCategory()
+    public List<Category> GetAllCategories()
     {
         if (connection.State == System.Data.ConnectionState.Closed)
         {
             connection.Open();
         }
 
-        query = @"select * from category;";
+        query = @"select * from categories;";
         MySqlCommand command = new MySqlCommand(query, connection);
         reader = command.ExecuteReader();
 
@@ -57,8 +57,6 @@ public class CategoryDAL
         cate.Id = reader.GetInt32("id");
         cate.Title = reader.GetString("title");
         cate.Link = reader.GetString("link");
-        cate.Description = reader.GetString("description");
-
         return cate;
     }
 }

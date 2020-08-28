@@ -1,0 +1,14 @@
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.csprojAssemblyReference.cache
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.AssemblyInfoInputs.cache
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.AssemblyInfo.cs
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.csproj.CoreCompileInputs.cache
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\BL.deps.json
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\BL.dll
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\BL.pdb
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\DAL.dll
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\Persistence.dll
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\DAL.pdb
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\bin\Debug\netstandard2.0\Persistence.pdb
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.csproj.CopyComplete
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.dll
+C:\Users\nasa1\Desktop\CSharp\CrawlData\BL\obj\Debug\netstandard2.0\BL.pdb
