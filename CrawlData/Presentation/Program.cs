@@ -6,35 +6,42 @@ namespace Presentation
 {
     class Program
     {
-        static void Main(string[] args)
+        static async System.Threading.Tasks.Task Main(string[] args)
         {
-            while (true)
-            {
-                Console.WriteLine("-----BEAUTIFUL GIRLS-----");
-                Console.WriteLine("1. Show categories!");
+            CategoryServices services = new CategoryServices();
 
-                Console.WriteLine("-------------------------");
-                Console.Write("Enter your choice: ");
-                int choice = Int32.Parse(Console.ReadLine());
+            await services.GetCategoriesFromWebAsync();
+            // while (true)
+            // {
+            //     Console.WriteLine("-----BEAUTIFUL GIRLS-----");
+            //     Console.WriteLine("1. Show categories!");
+            //     Console.WriteLine("2. Get all categories!");
 
-                switch (choice)
-                {
-                    case 1:
-                        CategoryBL categoryBL = new CategoryBL();
-                        List<Category> listCategories = categoryBL.GetAllCategories();
+            //     Console.WriteLine("-------------------------");
+            //     Console.Write("Enter your choice: ");
+            //     int choice = Int32.Parse(Console.ReadLine());
 
-                        var table = new ConsoleTable("ID", "Title", "Link");
+            //     switch (choice)
+            //     {
+            //         case 1:
+            //             CategoryBL categoryBL = new CategoryBL();
+            //             List<Category> listCategories = categoryBL.GetAllCategories();
 
-                        foreach (Category item in listCategories)
-                        {       
-                            table.AddRow(item.Id, item.Title, item.Link);
-                        }
-                        table.Write();
-                        break;
-                    default:
-                        break;
-                }
-            }
+            //             var table = new ConsoleTable("ID", "Title", "Link");
+
+            //             foreach (Category item in listCategories)
+            //             {       
+            //                 table.AddRow(item.Id, item.Title, item.Link);
+            //             }
+            //             table.Write();
+            //             break;
+            //         case 2: 
+                        
+            //         break;
+            //         default:
+            //             break;
+            //     }
+            // }
         }
     }
 }

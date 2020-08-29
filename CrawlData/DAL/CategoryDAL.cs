@@ -57,6 +57,7 @@ public class CategoryDAL
         cate.Id = reader.GetInt32("id");
         cate.Title = reader.GetString("title");
         cate.Link = reader.GetString("link");
+        cate.NumberOfPost = reader.GetInt32("number_of_post");
         return cate;
     }
 }
