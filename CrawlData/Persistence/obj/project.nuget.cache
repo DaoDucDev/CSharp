@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JD68QGvss9/inYK0xzjLKLfeD7rAboKw7Q8WMlq7sIU4ZZ3RMyKhCq+v6egawV2qYTF5AitP5i/8OS+bND0g+w==",
+  "dgSpecHash": "AAWtb8i/pDHwMbu3DZc8aKn1vXJq5PezN7iUZhx0i6rXhRsZI+g4dKtb2dZwq5LY15ksoYiqtjXpTCL8OLjDEg==",
   "success": true,
-  "projectFilePath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\nasa1\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
