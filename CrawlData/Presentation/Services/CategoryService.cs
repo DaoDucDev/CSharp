@@ -13,12 +13,9 @@ public class CategoryServices
     {
         List<Category> listCategories = new List<Category>();
 
-        string url = "https://mrcong.com/sets/";
-
         string htmlData = null;
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-        request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36 Edg/84.0.522.61";
-        CookieContainer cookieJar = new CookieContainer();
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Configs.SetsUrl);
+        request.UserAgent = Configs.UserAgent;
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
         if (response.StatusCode == HttpStatusCode.OK)
