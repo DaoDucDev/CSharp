@@ -7,3 +7,12 @@ C:\Users\nasa1\Desktop\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Per
 C:\Users\nasa1\Desktop\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
 C:\Users\nasa1\Desktop\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.dll
 C:\Users\nasa1\Desktop\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.pdb
+D:\Learn\CSharp\CrawlData\Persistence\bin\Debug\netstandard2.0\Persistence.deps.json
+D:\Learn\CSharp\CrawlData\Persistence\bin\Debug\netstandard2.0\Persistence.dll
+D:\Learn\CSharp\CrawlData\Persistence\bin\Debug\netstandard2.0\Persistence.pdb
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.csprojAssemblyReference.cache
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.dll
+D:\Learn\CSharp\CrawlData\Persistence\obj\Debug\netstandard2.0\Persistence.pdb

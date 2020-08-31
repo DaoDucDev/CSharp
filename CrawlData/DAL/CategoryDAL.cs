@@ -57,6 +57,31 @@ public class CategoryDAL
         cate.Id = reader.GetInt32("id");
         cate.Title = reader.GetString("title");
         cate.Link = reader.GetString("link");
+        cate.NumberOfPost = reader.GetInt32("number_of_post");
         return cate;
+    }
+
+    public bool AddCategories(List<Category> categories)
+    {
+        bool result = false;
+        foreach (var item in categories)
+        {
+            MySqlCommand command = new MySqlCommand("", connection);
+            string text = @"insert into Categories(title, link, number_of_post)
+                    values(@title, @link, @number_of_post)";
+
+            command.CommandText = text;
+
+            command.Parameters.AddWithValue("@title", item.Title);
+            command.Parameters.AddWithValue("@link", item.Link);
+            command.Parameters.AddWithValue("@number_of_post", item.NumberOfPost);
+            command.ExecuteNonQuery();
+            result = true;
+            
+
+        }
+
+        connection.Close();
+        return result;
     }
 }

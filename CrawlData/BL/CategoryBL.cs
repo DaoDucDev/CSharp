@@ -12,4 +12,9 @@ public class CategoryBL
     {
         return categoryDAL.GetAllCategories();
     }
+
+    public bool AddCategories(List<Category> categories)
+    {
+        return categoryDAL.AddCategories(categories);
+    }
 }

@@ -10,3 +10,15 @@ C:\Users\nasa1\Desktop\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.csproj.
 C:\Users\nasa1\Desktop\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
 C:\Users\nasa1\Desktop\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.dll
 C:\Users\nasa1\Desktop\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.pdb
+D:\Learn\CSharp\CrawlData\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+D:\Learn\CSharp\CrawlData\DAL\bin\Debug\netstandard2.0\DAL.dll
+D:\Learn\CSharp\CrawlData\DAL\bin\Debug\netstandard2.0\DAL.pdb
+D:\Learn\CSharp\CrawlData\DAL\bin\Debug\netstandard2.0\Persistence.dll
+D:\Learn\CSharp\CrawlData\DAL\bin\Debug\netstandard2.0\Persistence.pdb
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.csproj.CoreCompileInputs.cache
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.dll
+D:\Learn\CSharp\CrawlData\DAL\obj\Debug\netstandard2.0\DAL.pdb
