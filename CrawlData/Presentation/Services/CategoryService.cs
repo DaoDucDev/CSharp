@@ -42,9 +42,10 @@ public class CategoryServices
         var document = await context.OpenAsync(req => req.Content(htmlData));
 
         var nodes = document.QuerySelectorAll("span.tag-counterz");
-
+        int id = 0;
         foreach (var item in nodes)
         {
+            id++;
             string title = item.QuerySelector("strong").TextContent.Trim();
             string link = item.QuerySelector("a").Attributes["href"].Value;
             var regex = @"(?<=\()(.*?)(?=\))";
@@ -52,10 +53,21 @@ public class CategoryServices
 
             int postNumber = Int32.Parse(match.ToString());
 
-            Category category = new Category(title, link, postNumber);
+            Category category = new Category(id, title, link, postNumber);
             listCategories.Add(category);
         }
         
         return listCategories;
+    }
+
+    public async Task UpdateCategoriesDataAsync()
+    {
+        CategoryServices services = new CategoryServices();
+        List<Category> categoriesFromWeb = await services.GetCategoriesFromWebAsync();
+
+
+        CategoryBL categoryBL = new CategoryBL();
+        List<Category> categoriesFromDatabase = categoryBL.GetAllCategories();
+
     }
 }
