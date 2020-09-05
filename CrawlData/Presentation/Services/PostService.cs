@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using AngleSharp;
 
-public class CategoryServices
+public class PostService
 {
-    public async Task<List<Category>> GetCategoriesFromWebAsync()
+    public async Task<List<Post>> GetPostsOfCategoryAsync(Category category, int pageNumber)
     {
-        List<Category> listCategories = new List<Category>();
+        List<Post> listPost = new List<Post>();
 
+        #region Get html
         string htmlData = null;
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Configs.SetsUrl);
+        string url = category.Link + "/page/$pageNumber";
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
         request.UserAgent = Configs.UserAgent;
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
@@ -33,29 +34,24 @@ public class CategoryServices
             }
 
             htmlData = readStream.ReadToEnd();
-
         }
 
+        #endregion
+
+        #region Get data from html
         var context = BrowsingContext.New(Configuration.Default);
 
         //Create a document from a virtual request / response pattern
         var document = await context.OpenAsync(req => req.Content(htmlData));
 
-        var nodes = document.QuerySelectorAll("span.tag-counterz");
+        var nodes = document.QuerySelectorAll("article.item-list");
 
         foreach (var item in nodes)
         {
-            string title = item.QuerySelector("strong").TextContent.Trim();
-            string link = item.QuerySelector("a").Attributes["href"].Value;
-            var regex = @"(?<=\()(.*?)(?=\))";
-            Match match = Regex.Match(item.TextContent, regex);
-
-            int postNumber = Int32.Parse(match.ToString());
-
-            Category category = new Category(title, link, postNumber);
-            listCategories.Add(category);
+            
         }
-        
-        return listCategories;
+        #endregion
+
+        return listPost;
     }
 }

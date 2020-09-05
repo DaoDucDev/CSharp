@@ -6,42 +6,42 @@ namespace Presentation
 {
     class Program
     {
+        private static List<Category> listCategories;
         static async System.Threading.Tasks.Task Main(string[] args)
         {
-            // CategoryServices services = new CategoryServices();
-
-            // await services.GetCategoriesFromWebAsync();
             while (true)
             {
-                Console.WriteLine("-----BEAUTIFUL GIRLS-----");
-                Console.WriteLine("1. Show categories!");
-                Console.WriteLine("2. Get all categories from web!");
-
-                Console.WriteLine("-------------------------");
-                Console.Write("Enter your choice: ");
-                int choice = Int32.Parse(Console.ReadLine());
-
-                switch (choice)
+                switch (Menu.MainMenu())
                 {
                     case 1:
                         CategoryBL categoryBL = new CategoryBL();
-                        List<Category> listCategories = categoryBL.GetAllCategories();
+                        listCategories = categoryBL.GetAllCategories();
 
                         var table = new ConsoleTable("ID", "Title", "Link", "Number of Post");
 
                         foreach (Category item in listCategories)
-                        {       
+                        {
                             table.AddRow(item.Id, item.Title, item.Link, item.NumberOfPost);
                         }
                         table.Write();
+                        switch (Menu.SubMenu1())
+                        {
+                            case 1:
+                                Console.Clear();
+                                table.Write();
+                                
+                                break;
+                            default:
+                                break;
+                        }
                         break;
-                    case 2: 
+                    case 2:
                         CategoryServices services = new CategoryServices();
                         List<Category> categories = await services.GetCategoriesFromWebAsync();
                         categoryBL = new CategoryBL();
                         bool result = categoryBL.AddCategories(categories);
                         Console.WriteLine(result);
-                    break;
+                        break;
                     default:
                         break;
                 }
