@@ -56,18 +56,39 @@ public class CategoryServices
             Category category = new Category(id, title, link, postNumber);
             listCategories.Add(category);
         }
-        
+
         return listCategories;
     }
 
-    public async Task UpdateCategoriesDataAsync()
+    public async Task<bool> UpdateCategoriesDataAsync()
     {
+        bool result = false;
         CategoryServices services = new CategoryServices();
         List<Category> categoriesFromWeb = await services.GetCategoriesFromWebAsync();
-
 
         CategoryBL categoryBL = new CategoryBL();
         List<Category> categoriesFromDatabase = categoryBL.GetAllCategories();
 
+        bool hasNewData = false;
+        for (int i = 0; i < categoriesFromDatabase.Count; i++)
+        {
+            if (categoriesFromDatabase[i].NumberOfPost != categoriesFromWeb[i].NumberOfPost)
+            {
+                hasNewData = true;
+                categoriesFromDatabase[i].NumberOfPost = categoriesFromWeb[i].NumberOfPost;
+            }
+        }
+
+        if (hasNewData == true)
+        {
+            categoryBL = new CategoryBL();
+            result = categoryBL.UpdateCategories(categoriesFromDatabase);
+        }
+        else
+        {
+            result = false;
+        }
+
+        return result;
     }
 }

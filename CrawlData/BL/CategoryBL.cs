@@ -17,4 +17,9 @@ public class CategoryBL
     {
         return categoryDAL.AddCategories(categories);
     }
+
+    public bool UpdateCategories(List<Category> categories)
+    {
+        return categoryDAL.UpdateCategory(categories);
+    }
 }

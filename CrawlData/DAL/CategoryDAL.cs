@@ -84,4 +84,27 @@ public class CategoryDAL
         connection.Close();
         return result;
     }
+
+    public bool UpdateCategory(List<Category> categories)
+    {
+        bool result = false;
+        foreach (var item in categories)
+        {
+            MySqlCommand command = new MySqlCommand("", connection);
+            string text = @"update ignore Categories
+                            SET
+                                number_of_post = @number_of_post
+                            WHERE
+                                id = @Id";
+
+            command.CommandText = text;
+            command.Parameters.AddWithValue("@number_of_post", item.NumberOfPost);
+            command.Parameters.AddWithValue("@Id", item.Id);
+            command.ExecuteNonQuery();
+            result = true;
+        }
+
+        connection.Close();
+        return result;
+    }
 }
