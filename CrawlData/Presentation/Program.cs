@@ -31,7 +31,6 @@ namespace Presentation
                             case 1:
                                 Console.Clear();
                                 table.Write();
-
                                 break;
                             default:
                                 break;
