@@ -17,9 +17,9 @@ public class Post
 
     public Post(string _title, string _thumbnail, string _link, int _viewNumber)
     {
-        Title = _title;
-        Thumbnail = _thumbnail;
-        Link = _link;
-        ViewNumber = _viewNumber;
+        this.Title = _title;
+        this.Thumbnail = _thumbnail;
+        this.Link = _link;
+        this.ViewNumber = _viewNumber;
     }
 }

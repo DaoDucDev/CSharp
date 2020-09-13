@@ -8,11 +8,8 @@ using AngleSharp;
 
 public class PostService
 {
-    public async Task<List<Post>> GetPostsOfCategoryAsync(Category category, int pageNumber)
+    public string GetHhtmlData(Category category, int pageNumber)
     {
-        List<Post> listPost = new List<Post>();
-
-        #region Get html
         string htmlData = null;
         string url = category.Link + "/page/$pageNumber";
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -36,9 +33,14 @@ public class PostService
             htmlData = readStream.ReadToEnd();
         }
 
-        #endregion
+        return htmlData;
+    }
 
-        #region Get data from html
+    #region Get data from html
+    public async Task<List<Post>> GetPostsOfCategoryAsync(string htmlData)
+    {
+        List<Post> listPost = new List<Post>();
+
         var context = BrowsingContext.New(Configuration.Default);
 
         //Create a document from a virtual request / response pattern
@@ -48,10 +50,17 @@ public class PostService
 
         foreach (var item in nodes)
         {
-            
+            String title = item.QuerySelector("h2.post-box-title").Children[0].TextContent;
+            var img = item.QuerySelector("img").Attributes["src"].Value;
+            var link = item.QuerySelector("h2.post-box-title").Children[0].Attributes["href"].Value;
+            var view = int.Parse(item.QuerySelector("span.post-views").TextContent.Trim());
+
+            Post p = new Post(title, img, link, view);
+            listPost.Add(p);
         }
-        #endregion
+
 
         return listPost;
     }
+    #endregion
 }
