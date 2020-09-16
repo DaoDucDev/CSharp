@@ -8,10 +8,10 @@ using AngleSharp;
 
 public class PostService
 {
-    public string GetHhtmlData(Category category, int pageNumber)
+    public string GetHtmlData(Category category, int pageNumber)
     {
         string htmlData = null;
-        string url = category.Link + "/page/$pageNumber";
+        string url = category.Link + "/page/" + pageNumber;
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
         request.UserAgent = Configs.UserAgent;
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -53,7 +53,7 @@ public class PostService
             String title = item.QuerySelector("h2.post-box-title").Children[0].TextContent;
             var img = item.QuerySelector("img").Attributes["src"].Value;
             var link = item.QuerySelector("h2.post-box-title").Children[0].Attributes["href"].Value;
-            var view = int.Parse(item.QuerySelector("span.post-views").TextContent.Trim());
+            var view = Int32.Parse(item.QuerySelector("span.post-views").TextContent.Trim().Replace(",", ""));
 
             Post p = new Post(title, img, link, view);
             listPost.Add(p);

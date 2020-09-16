@@ -2,6 +2,8 @@ using System;
 using ConsoleTables;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+
 public class Menu
 {
     private static List<Category> listCategories;
@@ -32,7 +34,7 @@ public class Menu
         {
             case 1:
                 MainMenu1();
-                DisplaySubMenu1Async();
+                await DisplaySubMenu1Async();
                 break;
             case 2:
                 CategoryBL categoryBL = new CategoryBL();
@@ -57,7 +59,7 @@ public class Menu
                 break;
         }
     }
-    public static void DisplaySubMenu1Async()
+    public static async Task DisplaySubMenu1Async()
     {
         Console.WriteLine("-------------------------");
         Console.WriteLine("1. Get posts of category.");
@@ -76,17 +78,32 @@ public class Menu
                 Category category = listCategories.Single(s => s.Id == id);
                 
                 int numberOfPage = 0;
-                if(category.NumberOfPost % 10 != 0)
+                if(category.NumberOfPost % 20 != 0)
                 {
-                    numberOfPage = category.NumberOfPost / 10 + 1;
+                    numberOfPage = category.NumberOfPost / 20 + 1;
                 }
                 else
                 {
-                    numberOfPage = category.NumberOfPost / 10;
+                    numberOfPage = category.NumberOfPost / 20;
                 }
                 Console.WriteLine("Your choice is {0} with {1} pages!", category.Title, numberOfPage);
                 //Console.WriteLine(category.Link);
+                List<Post> allPosts = new List<Post>();
+                PostService postService = new PostService();
+                Console.WriteLine("Getting post...");
+                for (int i = 1; i <= numberOfPage; i++)
+                {
+                    string html = postService.GetHtmlData(category, i);
+                    List<Post> postsOfPage = await postService.GetPostsOfCategoryAsync(html);
 
+                    allPosts.AddRange(postsOfPage);
+
+                    await Task.Delay(1000);
+                }
+                // Console.WriteLine(allPosts.Count);
+                PostBL postBL = new PostBL();
+                bool result =  postBL.AddPostsIntoDatabase(allPosts, category.Id);
+                Console.WriteLine("Done!!!");
                 break;
 
             case 0:
