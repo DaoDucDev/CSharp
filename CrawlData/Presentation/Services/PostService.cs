@@ -55,7 +55,7 @@ public class PostService
             var link = item.QuerySelector("h2.post-box-title").Children[0].Attributes["href"].Value;
             var view = Int32.Parse(item.QuerySelector("span.post-views").TextContent.Trim().Replace(",", ""));
 
-            Post p = new Post(title, img, link, view);
+            Post p = new Post(title, img, link, view, DateTime.Now);
             listPost.Add(p);
         }
 

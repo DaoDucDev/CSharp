@@ -61,56 +61,59 @@ public class Menu
     }
     public static async Task DisplaySubMenu1Async()
     {
-        Console.WriteLine("-------------------------");
-        Console.WriteLine("1. Get posts of category.");
-        Console.WriteLine("2. Update new post of category");
-        Console.WriteLine("0. Back to main menu");
-        Console.WriteLine("-------------------------");
-
-        int subMenu1Choice = InputChoice();
-
-        switch (subMenu1Choice)
+        while(true)
         {
-            case 1:
-                Console.Write("Enter id of category: ");
-                int id = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("1. Get posts of category.");
+            Console.WriteLine("2. Update new post of category");
+            Console.WriteLine("0. Back to main menu");
+            Console.WriteLine("-------------------------");
 
-                Category category = listCategories.Single(s => s.Id == id);
-                
-                int numberOfPage = 0;
-                if(category.NumberOfPost % 20 != 0)
-                {
-                    numberOfPage = category.NumberOfPost / 20 + 1;
-                }
-                else
-                {
-                    numberOfPage = category.NumberOfPost / 20;
-                }
-                Console.WriteLine("Your choice is {0} with {1} pages!", category.Title, numberOfPage);
-                //Console.WriteLine(category.Link);
-                List<Post> allPosts = new List<Post>();
-                PostService postService = new PostService();
-                Console.WriteLine("Getting post...");
-                for (int i = 1; i <= numberOfPage; i++)
-                {
-                    string html = postService.GetHtmlData(category, i);
-                    List<Post> postsOfPage = await postService.GetPostsOfCategoryAsync(html);
+            int subMenu1Choice = InputChoice();
 
-                    allPosts.AddRange(postsOfPage);
+            switch (subMenu1Choice)
+            {
+                case 1:
+                    Console.Write("Enter id of category: ");
+                    int id = Int32.Parse(Console.ReadLine());
 
-                    await Task.Delay(1000);
-                }
-                // Console.WriteLine(allPosts.Count);
-                PostBL postBL = new PostBL();
-                bool result =  postBL.AddPostsIntoDatabase(allPosts, category.Id);
-                Console.WriteLine("Done!!!");
-                break;
+                    Category category = listCategories.Single(s => s.Id == id);
 
-            case 0:
+                    int numberOfPage = 0;
+                    if (category.NumberOfPost % 20 != 0)
+                    {
+                        numberOfPage = category.NumberOfPost / 20 + 1;
+                    }
+                    else
+                    {
+                        numberOfPage = category.NumberOfPost / 20;
+                    }
+                    Console.WriteLine("Your choice is {0} with {1} pages!", category.Title, numberOfPage);
+                    //Console.WriteLine(category.Link);
+                    List<Post> allPosts = new List<Post>();
+                    PostService postService = new PostService();
+                    Console.WriteLine("Getting post...");
+                    for (int i = 1; i <= numberOfPage; i++)
+                    {
+                        string html = postService.GetHtmlData(category, i);
+                        List<Post> postsOfPage = await postService.GetPostsOfCategoryAsync(html);
 
-                break;
-            default:
-                break;
+                        allPosts.AddRange(postsOfPage);
+
+                        await Task.Delay(1000);
+                    }
+                    // Console.WriteLine(allPosts.Count);
+                    PostBL postBL = new PostBL();
+                    bool result = postBL.AddPostsIntoDatabase(allPosts, category.Id);
+                    Console.WriteLine("Done!!!");
+                    break;
+
+                case 0:
+
+                    break;
+                default:
+                    break;
+            }
         }
     }
 

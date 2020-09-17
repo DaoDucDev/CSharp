@@ -19,8 +19,8 @@ public class PostDAL
         foreach (var item in posts)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"insert into Post(title, thumbnail, link, view_number, category_id)
-                    values(@title, @thumbnail, @link, @view_number, @category_id)";
+            string text = @"insert into Post(title, thumbnail, link, view_number, category_id, time_create)
+                    values(@title, @thumbnail, @link, @view_number, @category_id, @time_create)";
 
             command.CommandText = text;
 
@@ -29,6 +29,7 @@ public class PostDAL
             command.Parameters.AddWithValue("@link", item.Link);
             command.Parameters.AddWithValue("@view_number", item.ViewNumber);
             command.Parameters.AddWithValue("@category_id", categoryId);
+            command.Parameters.AddWithValue("@time_create", item.TimeCreate);
             command.ExecuteNonQuery();
             result = true;
             
