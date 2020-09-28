@@ -11,7 +11,7 @@ namespace Presentation
             {
                 await Menu.DisplayMainMenuAsync();
             } while (true);
-            
+
         }
     }
 }
