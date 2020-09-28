@@ -21,42 +21,45 @@ public class Menu
         table.Write();
     }
 
-    public static async System.Threading.Tasks.Task DisplayMainMenuAsync()
+    public static async Task DisplayMainMenuAsync()
     {
-        Console.WriteLine("-----BEAUTIFUL GIRLS-----");
-        Console.WriteLine("1. Show categories from database!");
-        Console.WriteLine("2. Get all categories from web!");
-        Console.WriteLine("3. Update category from web");
-        Console.WriteLine("0. Exits");
-        Console.WriteLine("-------------------------");
-        int choice = InputChoice();
-        switch (choice)
+        while(true)
         {
-            case 1:
-                MainMenu1();
-                await DisplaySubMenu1Async();
-                break;
-            case 2:
-                CategoryBL categoryBL = new CategoryBL();
-                CategoryServices services = new CategoryServices();
-                List<Category> categories = await services.GetCategoriesFromWebAsync();
-                categoryBL = new CategoryBL();
-                bool result = categoryBL.AddCategories(categories);
-                Console.WriteLine(result);
-                break;
-            case 3:
-                CategoryServices updateService = new CategoryServices();
-                bool updateResult = await updateService.UpdateCategoriesDataAsync();
-                if (updateResult == true)
-                {
-                    Console.WriteLine("Update complete!!!");
-                }
-                break;
-            case 4:
-                Environment.Exit(0);
-                break;
-            default:
-                break;
+            Console.WriteLine("-----BEAUTIFUL GIRLS-----");
+            Console.WriteLine("1. Show categories from database!");
+            Console.WriteLine("2. Get all categories from web!");
+            Console.WriteLine("3. Update category from web");
+            Console.WriteLine("0. Exits");
+            Console.WriteLine("-------------------------");
+            int choice = InputChoice();
+            switch (choice)
+            {
+                case 1:
+                    MainMenu1();
+                    await DisplaySubMenu1Async();
+                    break;
+                case 2:
+                    CategoryBL categoryBL = new CategoryBL();
+                    CategoryServices services = new CategoryServices();
+                    List<Category> categories = await services.GetCategoriesFromWebAsync();
+                    categoryBL = new CategoryBL();
+                    bool result = categoryBL.AddCategories(categories);
+                    Console.WriteLine(result);
+                    break;
+                case 3:
+                    CategoryServices updateService = new CategoryServices();
+                    bool updateResult = await updateService.UpdateCategoriesDataAsync();
+                    if (updateResult == true)
+                    {
+                        Console.WriteLine("Update complete!!!");
+                    }
+                    break;
+                case 4:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    break;
+            }
         }
     }
     public static async Task DisplaySubMenu1Async()

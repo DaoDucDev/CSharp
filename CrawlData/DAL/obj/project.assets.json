@@ -4501,21 +4501,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nasa1\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nasa1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\Learn\\CSharp\\CrawlData\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-      "outputPath": "D:\\Learn\\CSharp\\CrawlData\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -4530,8 +4526,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
+            "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -4566,7 +4562,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
