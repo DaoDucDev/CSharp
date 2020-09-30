@@ -51,7 +51,6 @@ public class Menu
                     Console.WriteLine(result);
                     break;
                 case 3:
-                    //CategoryServices updateService = new CategoryServices();
                     bool updateResult = await services.UpdateCategoriesDataAsync();
                     if (updateResult == true)
                     {
@@ -96,7 +95,6 @@ public class Menu
                         numberOfPage = category.NumberOfPost / 20;
                     }
                     Console.WriteLine("Your choice is {0} with {1} pages!", category.Title, numberOfPage);
-                    //Console.WriteLine(category.Link);
                     List<Post> allPosts = new List<Post>();
                     PostService postService = new PostService();
                     Console.WriteLine("Getting post...");
@@ -116,7 +114,7 @@ public class Menu
                     break;
 
                 case 0:
-
+                    await DisplayMainMenuAsync();
                     break;
                 default:
                     break;
