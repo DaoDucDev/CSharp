@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 public class Menu
 {
+    private static CategoryBL categoryBL = new CategoryBL();
     private static List<Category> listCategories;
+    private static CategoryServices services = new CategoryServices();
+
     public static void MainMenu1()
     {
-        CategoryBL categoryBL = new CategoryBL();
+        
         listCategories = categoryBL.GetAllCategories();
 
         var table = new ConsoleTable("ID", "Title", "Link", "Number of Post");
@@ -39,16 +42,17 @@ public class Menu
                     await DisplaySubMenu1Async();
                     break;
                 case 2:
-                    CategoryBL categoryBL = new CategoryBL();
-                    CategoryServices services = new CategoryServices();
+                    //CategoryBL categoryBL = new CategoryBL();
+                    
                     List<Category> categories = await services.GetCategoriesFromWebAsync();
-                    categoryBL = new CategoryBL();
+                    //categoryBL = new CategoryBL();
                     bool result = categoryBL.AddCategories(categories);
+                    Console.WriteLine("ABC");
                     Console.WriteLine(result);
                     break;
                 case 3:
-                    CategoryServices updateService = new CategoryServices();
-                    bool updateResult = await updateService.UpdateCategoriesDataAsync();
+                    //CategoryServices updateService = new CategoryServices();
+                    bool updateResult = await services.UpdateCategoriesDataAsync();
                     if (updateResult == true)
                     {
                         Console.WriteLine("Update complete!!!");
