@@ -71,7 +71,7 @@ public class CategoryDAL
         foreach (var item in categories)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"insert into Categories(title, link, number_of_post)
+            string text = @"insert into categories(title, link, number_of_post)
                     values(@title, @link, @number_of_post)";
 
             command.CommandText = text;
@@ -93,7 +93,7 @@ public class CategoryDAL
         foreach (var item in categories)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"update ignore Categories
+            string text = @"update ignore categories
                             SET
                                 number_of_post = @number_of_post
                             WHERE
