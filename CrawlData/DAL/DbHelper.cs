@@ -24,7 +24,6 @@ public class DbHelper
         {
             GetConnection();
         }
-
         connection.Open();
         return connection;
     }

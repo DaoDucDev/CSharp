@@ -10,7 +10,11 @@ public class CategoryDAL
 
     public CategoryDAL()
     {
-        connection = DbHelper.OpenConnection();
+        if(connection == null)
+        {
+            connection = DbHelper.OpenConnection();
+        }
+        
     }
 
     public List<Category> GetAllCategories()
@@ -45,7 +49,7 @@ public class CategoryDAL
         {
             listCategories.Add(GetCategoryInfo(reader));
         }
-
+        reader.Close();
         connection.Close();
 
         return listCategories;
@@ -77,8 +81,6 @@ public class CategoryDAL
             command.Parameters.AddWithValue("@number_of_post", item.NumberOfPost);
             command.ExecuteNonQuery();
             result = true;
-            
-
         }
 
         connection.Close();
