@@ -1,6 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xtyBUzOxwTxBhU6iONs6pj+f2LFOpxP4OoV1kVZhp6x1dY2efmyIxxdOVrHmbB3F3A8HuwQVLWedrS4CN+pQyw==",
+=======
+<<<<<<< HEAD
+  "dgSpecHash": "wvcqg2d4z5xWj4dOl7uAKOy0QpH/aIEURpi5ZTQwQIfWi4Cof4Mgy8iHLgZOh+QZlj25Q82A88DVzhk+9eWuLA==",
+=======
+  "dgSpecHash": "sW4bdlc36d+W8f08JPU438qbj3nDS5TSFP/DhBg7lnLjmnAL0i7ii1g+rSVdKoQ2bpbGmzjxoho94wyvs4wFow==",
+>>>>>>> dc466dbe4a6568120c61878609bc5862e140dd3a
+>>>>>>> 10d3780ee474a87fcffff739986e433bf19891ae
   "success": true,
   "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
