@@ -11,11 +11,7 @@ public class DbHelper
             connection = new MySqlConnection
             {
                 ConnectionString = @"server=localhost;user id=root;
-<<<<<<< HEAD
                     port=3306;password=123456;database=girls"
-=======
-                    port=3306;password=261992;database=girls"
->>>>>>> 4a6063374730cf456904dc82fb50d9f8833d1d03
             };
         }
 
