@@ -4573,21 +4573,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nasa1\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nasa1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
+      "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-      "outputPath": "D:\\Learn\\CSharp\\CrawlData\\Presentation\\obj\\",
+      "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -4602,11 +4598,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj": {
-              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\BL\\BL.csproj"
+            "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj"
             },
-            "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
-              "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
+            "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
             }
           }
         }

@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 public class Menu
 {
+    private static CategoryBL categoryBL = new CategoryBL();
     private static List<Category> listCategories;
+    private static CategoryServices services = new CategoryServices();
+
     public static void MainMenu1()
     {
-        CategoryBL categoryBL = new CategoryBL();
+        
         listCategories = categoryBL.GetAllCategories();
 
         var table = new ConsoleTable("ID", "Title", "Link", "Number of Post");
@@ -21,42 +24,45 @@ public class Menu
         table.Write();
     }
 
-    public static async System.Threading.Tasks.Task DisplayMainMenuAsync()
+    public static async Task DisplayMainMenuAsync()
     {
-        Console.WriteLine("-----BEAUTIFUL GIRLS-----");
-        Console.WriteLine("1. Show categories from database!");
-        Console.WriteLine("2. Get all categories from web!");
-        Console.WriteLine("3. Update category from web");
-        Console.WriteLine("0. Exits");
-        Console.WriteLine("-------------------------");
-        int choice = InputChoice();
-        switch (choice)
+        while(true)
         {
-            case 1:
-                MainMenu1();
-                await DisplaySubMenu1Async();
-                break;
-            case 2:
-                CategoryBL categoryBL = new CategoryBL();
-                CategoryServices services = new CategoryServices();
-                List<Category> categories = await services.GetCategoriesFromWebAsync();
-                categoryBL = new CategoryBL();
-                bool result = categoryBL.AddCategories(categories);
-                Console.WriteLine(result);
-                break;
-            case 3:
-                CategoryServices updateService = new CategoryServices();
-                bool updateResult = await updateService.UpdateCategoriesDataAsync();
-                if (updateResult == true)
-                {
-                    Console.WriteLine("Update complete!!!");
-                }
-                break;
-            case 4:
-                Environment.Exit(0);
-                break;
-            default:
-                break;
+            Console.WriteLine("-----BEAUTIFUL GIRLS-----");
+            Console.WriteLine("1. Show categories from database!");
+            Console.WriteLine("2. Get all categories from web!");
+            Console.WriteLine("3. Update category from web");
+            Console.WriteLine("0. Exits");
+            Console.WriteLine("-------------------------");
+            int choice = InputChoice();
+            switch (choice)
+            {
+                case 1:
+                    MainMenu1();
+                    await DisplaySubMenu1Async();
+                    break;
+                case 2:
+                    //CategoryBL categoryBL = new CategoryBL();
+                    
+                    List<Category> categories = await services.GetCategoriesFromWebAsync();
+                    //categoryBL = new CategoryBL();
+                    bool result = categoryBL.AddCategories(categories);
+                    Console.WriteLine("ABC");
+                    Console.WriteLine(result);
+                    break;
+                case 3:
+                    bool updateResult = await services.UpdateCategoriesDataAsync();
+                    if (updateResult == true)
+                    {
+                        Console.WriteLine("Update complete!!!");
+                    }
+                    break;
+                case 4:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    break;
+            }
         }
     }
     public static async Task DisplaySubMenu1Async() 
@@ -89,7 +95,6 @@ public class Menu
                         numberOfPage = category.NumberOfPost / 20;
                     }
                     Console.WriteLine("Your choice is {0} with {1} pages!", category.Title, numberOfPage);
-                    //Console.WriteLine(category.Link);
                     List<Post> allPosts = new List<Post>();
                     PostService postService = new PostService();
                     Console.WriteLine("Getting post...");
@@ -109,7 +114,7 @@ public class Menu
                     break;
 
                 case 0:
-
+                    await DisplayMainMenuAsync();
                     break;
                 default:
                     break;

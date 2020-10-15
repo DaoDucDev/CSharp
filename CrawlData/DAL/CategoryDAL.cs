@@ -10,7 +10,11 @@ public class CategoryDAL
 
     public CategoryDAL()
     {
-        connection = DbHelper.OpenConnection();
+        if(connection == null)
+        {
+            connection = DbHelper.OpenConnection();
+        }
+        
     }
 
     public List<Category> GetAllCategories()
@@ -45,7 +49,7 @@ public class CategoryDAL
         {
             listCategories.Add(GetCategoryInfo(reader));
         }
-
+        reader.Close();
         connection.Close();
 
         return listCategories;
@@ -67,7 +71,7 @@ public class CategoryDAL
         foreach (var item in categories)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"insert into Categories(title, link, number_of_post)
+            string text = @"insert into categories(title, link, number_of_post)
                     values(@title, @link, @number_of_post)";
 
             command.CommandText = text;
@@ -77,8 +81,6 @@ public class CategoryDAL
             command.Parameters.AddWithValue("@number_of_post", item.NumberOfPost);
             command.ExecuteNonQuery();
             result = true;
-            
-
         }
 
         connection.Close();
@@ -91,7 +93,7 @@ public class CategoryDAL
         foreach (var item in categories)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"update ignore Categories
+            string text = @"update ignore categories
                             SET
                                 number_of_post = @number_of_post
                             WHERE

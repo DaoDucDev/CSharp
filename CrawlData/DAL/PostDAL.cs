@@ -3,8 +3,8 @@ using MySql.Data.MySqlClient;
 
 public class PostDAL
 {
-    private string query;
-    private MySqlDataReader reader;
+    //private string query;
+    //private MySqlDataReader reader;
     private MySqlConnection connection;
 
     public PostDAL()
@@ -19,7 +19,7 @@ public class PostDAL
         foreach (var item in posts)
         {
             MySqlCommand command = new MySqlCommand("", connection);
-            string text = @"insert into Post(title, thumbnail, link, view_number, category_id, time_create)
+            string text = @"insert into post(title, thumbnail, link, view_number, category_id, time_create)
                     values(@title, @thumbnail, @link, @view_number, @category_id, @time_create)";
 
             command.CommandText = text;

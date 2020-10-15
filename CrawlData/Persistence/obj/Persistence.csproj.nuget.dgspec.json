@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-        "outputPath": "D:\\Learn\\CSharp\\CrawlData\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

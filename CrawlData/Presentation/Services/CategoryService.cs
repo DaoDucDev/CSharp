@@ -9,6 +9,8 @@ using AngleSharp;
 
 public class CategoryServices
 {
+    private static CategoryServices services = new CategoryServices();
+    private static CategoryBL categoryBL = new CategoryBL();
     public async Task<List<Category>> GetCategoriesFromWebAsync()
     {
         List<Category> listCategories = new List<Category>();
@@ -63,10 +65,8 @@ public class CategoryServices
     public async Task<bool> UpdateCategoriesDataAsync()
     {
         bool result = false;
-        CategoryServices services = new CategoryServices();
+        
         List<Category> categoriesFromWeb = await services.GetCategoriesFromWebAsync();
-
-        CategoryBL categoryBL = new CategoryBL();
         List<Category> categoriesFromDatabase = categoryBL.GetAllCategories();
 
         bool hasNewData = false;
@@ -81,7 +81,6 @@ public class CategoryServices
 
         if (hasNewData == true)
         {
-            categoryBL = new CategoryBL();
             result = categoryBL.UpdateCategories(categoriesFromDatabase);
         }
         else
