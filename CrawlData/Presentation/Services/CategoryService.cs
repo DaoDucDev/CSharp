@@ -11,7 +11,7 @@ public class CategoryServices
 {
     private static CategoryServices services = new CategoryServices();
     private static CategoryBL categoryBL = new CategoryBL();
-    public async Task<List<Category>> GetCategoriesFromWebAsync()
+    public static async Task<List<Category>> GetCategoriesFromWebAsync()
     {
         List<Category> listCategories = new List<Category>();
 
@@ -62,11 +62,11 @@ public class CategoryServices
         return listCategories;
     }
 
-    public async Task<bool> UpdateCategoriesDataAsync()
+    public static async Task<bool> UpdateCategoriesDataAsync()
     {
         bool result = false;
         
-        List<Category> categoriesFromWeb = await services.GetCategoriesFromWebAsync();
+        List<Category> categoriesFromWeb = await GetCategoriesFromWebAsync();
         List<Category> categoriesFromDatabase = categoryBL.GetAllCategories();
 
         bool hasNewData = false;
