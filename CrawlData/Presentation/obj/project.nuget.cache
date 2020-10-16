@@ -1,14 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "bQWki7mkx19sZFVNvG/Dc28m9QAOF8VDEeI9Pu2YcvfI+cEINNjMi3n9xohWhpyYLb/VM6RnexN7cGpr/fo95A==",
-=======
-<<<<<<< HEAD
-  "dgSpecHash": "1qlIRkmTFUdb1uR9CyYpA0Bm/ARLnu65z910cfhydBK1WSzU8kwiP9xv1TxMN8QDtoW6/LiL2/28apSiV6Ly5A==",
-=======
-  "dgSpecHash": "94wzoFKycixhtMIZ6iGhYSrJ0cwkzImxWfaHJLE8FigKEf70vfi5cRfUQUZxTYDI1ztco/msoLG2Xd6qQYRleg==",
->>>>>>> dc466dbe4a6568120c61878609bc5862e140dd3a
->>>>>>> 10d3780ee474a87fcffff739986e433bf19891ae
   "success": true,
   "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -85,5 +77,12 @@
     "C:\\Users\\nasa1\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.0.1\\system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Presentation\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
