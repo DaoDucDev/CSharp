@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "booHTGBpyr2LVfuV5Fzjj1el2hgIzPD1o1qrHS7yE0s6IvNLUkdW4fC00MVyIHozT6oUrC9ofivyF8nF0sxB4w==",
+  "dgSpecHash": "3z3OpwhSxSSeq/6Mo0ZfW7y2Rxn5QHonS2eVaJ2ZfXEWs9qsAGWK041R3+s488MBhBjWR4BsVCRokINv5CqNJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
+  "projectFilePath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nasa1\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
@@ -80,7 +80,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

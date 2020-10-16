@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TeCxvW8zhEPxDkXRX7kTMFDz+fqZMvjpIXZlTy1V7WuatoqRXaH8FfSgC6nfiQKNZ0UhcjiveCdKVH3sB6GZ0w==",
+  "dgSpecHash": "PiUo/JLBUkHWAwOPN554wn1WeLN+5MWvGrMH+jC5U41VFcg6Wqkj8xJdAY1DdnW5PmKNShaBqTDYyMgFw1acXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+  "projectFilePath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nasa1\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
@@ -12,7 +12,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
