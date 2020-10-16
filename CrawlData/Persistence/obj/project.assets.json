@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,13 +236,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

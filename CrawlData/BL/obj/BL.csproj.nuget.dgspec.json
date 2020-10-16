@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj": {}
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj": {
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
+        "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\obj\\",
+        "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj": {
-                "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj"
+              "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj"
               },
-              "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
+              "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[0.14.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -66,14 +70,14 @@
         }
       }
     },
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj": {
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +93,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
+              "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -129,14 +133,14 @@
         }
       }
     },
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8,7 +8,7 @@ public class Menu
 {
     private static CategoryBL categoryBL = new CategoryBL();
     private static List<Category> listCategories;
-    // private static CategoryServices services = new CategoryServices();
+    private static CategoryServices services = new CategoryServices();
 
     public static void MainMenu1()
     {
@@ -44,19 +44,19 @@ public class Menu
                 case 2:
                     //CategoryBL categoryBL = new CategoryBL();
                     
-                    List<Category> categories = await CategoryServices.GetCategoriesFromWebAsync();
-                    //categoryBL = new CategoryBL();
-                    bool result = categoryBL.AddCategories(categories);
-                    Console.WriteLine("ABC");
-                    Console.WriteLine(result);
+                    //List<Category> categories = await CategoryServices.GetCategoriesFromWebAsync();
+                    ////categoryBL = new CategoryBL();
+                    //bool result = categoryBL.AddCategories(categories);
+                    ////Console.WriteLine("ABC");
+                    //Console.WriteLine(result);
                     break;
                 case 3:
-                    bool updateResult = await CategoryServices.UpdateCategoriesDataAsync();
-                    if (updateResult == true)
-                    {
-                        Console.WriteLine("Update complete!!!");
-                    }
-                    break;
+                    //bool updateResult = await services.UpdateCategoriesDataAsync();
+                    //if (updateResult == true)
+                    //{
+                    //    Console.WriteLine("Update complete!!!");
+                    //}
+                    //break;
                 case 4:
                     Environment.Exit(0);
                     break;

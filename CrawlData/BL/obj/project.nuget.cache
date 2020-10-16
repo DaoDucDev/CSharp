@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3z3OpwhSxSSeq/6Mo0ZfW7y2Rxn5QHonS2eVaJ2ZfXEWs9qsAGWK041R3+s488MBhBjWR4BsVCRokINv5CqNJQ==",
+  "dgSpecHash": "HQSoYmy8KXmo4CLQjo5IEyTPUIqo9SPC/WcgJwvZDoTW6h+LwAcDWFnN4NW2Gh3/XeAAkrAP1CQ4xSDsUPQZCg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
+  "projectFilePath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\BL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nasa1\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
@@ -61,7 +62,7 @@
     "C:\\Users\\nasa1\\.nuget\\packages\\system.security.permissions\\4.6.0\\system.security.permissions.4.6.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.security.principal.windows\\4.6.0\\system.security.principal.windows.4.6.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\nasa1\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
+    "C:\\Users\\nasa1\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.text.encoding.extensions\\4.0.11\\system.text.encoding.extensions.4.0.11.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.text.regularexpressions\\4.1.0\\system.text.regularexpressions.4.1.0.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
@@ -75,12 +76,5 @@
     "C:\\Users\\nasa1\\.nuget\\packages\\system.xml.xpath\\4.0.1\\system.xml.xpath.4.0.1.nupkg.sha512",
     "C:\\Users\\nasa1\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.0.1\\system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\BL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

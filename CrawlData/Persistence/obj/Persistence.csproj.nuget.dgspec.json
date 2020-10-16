@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\nasa1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\nasa1\\Desktop\\CSharp\\CrawlData\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
