@@ -1,0 +1,16 @@
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.exe
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.deps.json
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.runtimeconfig.json
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.runtimeconfig.dev.json
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.dll
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\ref\BeautifulNumber.dll
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\bin\Debug\net5.0\BeautifulNumber.pdb
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.csproj.AssemblyReference.cache
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.AssemblyInfoInputs.cache
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.AssemblyInfo.cs
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.csproj.CoreCompileInputs.cache
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.dll
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\ref\BeautifulNumber.dll
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.pdb
+C:\Users\nasa1\Desktop\CSharp\BeautifulNumber\obj\Debug\net5.0\BeautifulNumber.genruntimeconfig.cache
